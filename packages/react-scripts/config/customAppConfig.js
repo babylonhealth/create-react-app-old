@@ -1,12 +1,10 @@
-const { existsSync, readFileSync } = require('fs');
+const { existsSync } = require('fs');
 const paths = require('./paths');
-const pkgJson = require(paths.appPackageJson);
-const customAppConfig = pkgJson['babylon-react-app-config'] || {};
 
 const getSassOptions = () => {
-  if (customAppConfig['sass-overrides'] && existsSync(paths.scssOverridesSrc)) {
+  if (existsSync(paths.scssOverridesSrc)) {
     return {
-      data: readFileSync(paths.scssOverridesSrc),
+      data: `@import '${paths.scssOverridesSrc}';`,
     };
   }
   return {};
