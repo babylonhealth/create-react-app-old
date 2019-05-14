@@ -85,7 +85,7 @@ module.exports = {
   appSrc: resolveApp('src'),
   scssOverridesSrc: resolveApp('src/overrides.scss'),
   sharedLibSrc: resolveApp('../lib'),
-  chatbotSrc: resolveApp('../chatbot-ui-web'),
+  chatbotSrc: resolveApp('../chatbot-web'),
   appTsConfig: resolveApp('tsconfig.json'),
   yarnLockFile: resolveApp('yarn.lock'),
   testsSetup: resolveModule(resolveApp, 'src/setupTests'),
