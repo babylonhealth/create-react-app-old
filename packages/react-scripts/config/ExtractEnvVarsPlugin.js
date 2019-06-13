@@ -9,7 +9,9 @@ class ExtractEnvVarsPlugin {
 
   shouldProcessModule(module) {
     return (
-      module._source && module._source._value && /\.js$/.test(module.resource)
+      module._source &&
+      module._source._value &&
+      /\.(j|t)sx?$/.test(module.resource)
     );
   }
 
