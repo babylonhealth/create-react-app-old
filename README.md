@@ -1,3 +1,10 @@
+## ⚠️ Warning
+
+This repo was originally archived on date Jul 16 2019, however, it was found to still be in use by some production services. The repo should be considered deprecated, but will be kept unarchived whilst it is still in use in production.
+
+## ⚠️ Warning
+
+
 # Create React App [![Build Status](https://travis-ci.org/facebook/create-react-app.svg?branch=master)](https://travis-ci.org/facebook/create-react-app) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/facebook/create-react-app/pulls)
 
 Create React apps with no build configuration.
